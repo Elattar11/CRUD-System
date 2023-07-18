@@ -1,0 +1,67 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+          body
+          {
+            font-family: "segoe ui light";
+          }
+        </style>
+    </head>
+    <body>
+
+
+
+      <div class="w-75 my-5 mx-auto">
+
+        <label class="text-primary fw-bold">Product Name</label>
+        <input id="pNameId" class="form-control my-3">
+
+        <label class="text-primary fw-bold">Product Price</label>
+        <input id="pPriceId" class="form-control my-3">
+
+        <label class="text-primary fw-bold">Product Category</label>
+        <input id="pCatId" class="form-control my-3">
+
+        <label class="text-primary fw-bold">Product Description</label>
+        <textarea id="pDescId" class="form-control my-3"></textarea>
+
+        <button id="adBtn" onclick="addProduct()" class="btn btn-primary">Add Product</button>
+        <button onclick="updateProducts()" id="updateBtn" class="btn btn-warning text-white">Update Product</button>
+
+
+      </div>
+
+      <input oninput="searchProducr(this.value)" placeholder="search Product" class="form-control w-50 my-5 mx-auto">
+
+
+      <table class="my-5 table w-75 mx-auto">
+
+        <thead class="text-primary text-center">
+          <th class="fw-bold text-primary">Index</th>
+          <th class="fw-bold text-primary">Name</th>
+          <th class="fw-bold text-primary">Price</th>
+          <th class="fw-bold text-primary">Category</th>
+          <th class="fw-bold text-primary">Description</th>
+          <th class="text-warning fw-bold">Update</th>
+          <th class="text-danger fw-bold">Delete</th>
+          
+        </thead>
+
+        <tbody id="tBody" class="text-center">
+
+            
+        </tbody>
+
+      </table>
+
+
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/mine.js"></script>
+    </body>
+</html>
